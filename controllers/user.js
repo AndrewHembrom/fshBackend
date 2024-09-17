@@ -40,7 +40,7 @@ export const register = TryCatch(async (req, res) => {
     otp,
   };
 
-  await sendMail(email, "Vibrance", data);
+  await sendMail(email, "TechnoVIT", data);
 
   res.status(200).json({
     message: "Otp send to your mail",

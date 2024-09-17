@@ -20,7 +20,11 @@ const schema = new mongoose.Schema({
     },
     subscription: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Courses'
+        ref: 'Events'
+    }],
+    merch: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Merchandise'
     }]
 }, {
     timestamps: true,
