@@ -1,6 +1,6 @@
 import express from "express";
-import { getAllMerch, getSingleMerch, getMyMerchs } from "../controllers/merchandise";
-import { isAuth } from "../middlewares/isAuth";
+import { getAllMerch, getSingleMerch, getMyMerchs } from "../controllers/merchandise.js";
+import { isAuth } from "../middlewares/isAuth.js";
 
 const router = express.Router();
 

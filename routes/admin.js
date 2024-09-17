@@ -6,7 +6,7 @@ import { uploadFiles } from "../middlewares/multer.js";
 const router = express.Router();
 
 router.post("/event/new", isAuth, isAdmin, uploadFiles, createEvent);
-router.post("/event/new", isAuth, isAdmin, uploadFiles, createMerch);
+router.post("/merch/new", isAuth, isAdmin, uploadFiles, createMerch);
 router.delete("/event/:id", isAuth, isAdmin, deleteEvent);
 router.get("/stats", isAuth, isAdmin, getAllStats);
 

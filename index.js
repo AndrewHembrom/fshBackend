@@ -22,11 +22,14 @@ app.use("/uploads", express.static("uploads"));
 import userRoutes from "./routes/user.js";
 import eventsRoutes from "./routes/events.js";
 import adminRoutes from "./routes/admin.js";
+import merchRoutes from "./routes/merchandise.js";
+
 
 // using routes
 app.use("/api", userRoutes);
 app.use("/api", eventsRoutes);
 app.use("/api", adminRoutes);
+app.use("/api", merchRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
